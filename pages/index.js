@@ -3,9 +3,21 @@
 // import { Inter } from "@next/font/google";
 
 // const inter = Inter({ subsets: ["latin"] });
+import { Fragment } from "react";
+// import Hero from "../components/home-page/hero";
+import Hero from "../components/home-page/hero";
+import FeaturedPosts from "../components/home-page/featured-posts";
 
 function HomePage() {
-  return <h1>hi</h1>;
+  return (
+    <Fragment>
+      <Hero />
+      <FeaturedPosts />
+    </Fragment>
+  );
 }
 
 export default HomePage;
+
+// 1/ Hero - present ourselves
+// 2 featured posts
