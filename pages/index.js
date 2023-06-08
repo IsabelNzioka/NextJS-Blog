@@ -1,4 +1,4 @@
-// import Head from "next/head";
+import Head from "next/head";
 // import Image from "next/image";
 // import { Inter } from "@next/font/google";
 
@@ -12,6 +12,13 @@ import { getFeaturedPosts } from "../lib/posts-util";
 function HomePage(props) {
   return (
     <Fragment>
+      <Head>
+        <title>Bella|Blog</title>
+        <meta
+          name="description"
+          content="Web development made easier. Gain fresh perspectives, stay updated on trends, and ignite inspiration for your online journey"
+        />
+      </Head>
       <Hero />
       <FeaturedPosts posts={props.posts} />
     </Fragment>
